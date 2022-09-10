@@ -16,16 +16,16 @@ Category.hasMany(Product, {
 })
 
 // Products belongToMany Tags (through ProductTag)
-ProductTag.belongsToMany(Tag, {
+Product.belongsToMany(Tag, {
   through: ProductTag,
-  foreignKey: 'tag_id',
+  foreignKey: 'product_id',
 })
 
 // Tags belongToMany Products (through ProductTag)
 Tag.belongsToMany(ProductTag, {
   through: ProductTag,
   foreignKey: 'tag_id',
-  onDelete: 'CASCADE'
+  onDelete: 'CASCADE',
 })
 
 module.exports = {
