@@ -17,10 +17,10 @@
 
 ## Summary
 
-* Buildt mysql database with tables for employee, role, and department information
-* Built JS index which allows user to access database stored in mysql
-* Built commandline prompts that allows users to choose what information they want to view
-* Built mysql commands that joins tables so that information can be easily referenced
+* Buildt models for categories, products, and tags
+* Built relationships between models
+* Created routes for users to use CRUD functions (create, read, update, delete)
+* Created video showing how to create and seed database
 
 ## Author Links
 
